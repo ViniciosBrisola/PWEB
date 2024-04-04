@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Pedra, Papel e Tesoura</title>
+</head>
+<body>
+    <script>
+        do{
+            op = 1;
+            var a = 0.3333333333333333;
+            var b = 0.6666666666666666;
+            var opcoes = ['pedra', 'papel', 'tesoura'];
+
+            var escolha = prompt("Escolha uma opção:\n1 - Pedra\n2 - Papel\n3 - Tesoura");
+
+            var userOption = opcoes[escolha-1];
+
+            var pcOption = Math.random();
+            if(pcOption < a){
+                pcOption = opcoes[0];
+            }else if(pcOption > a && pcOption < b){
+                pcOption = opcoes[1];
+            }else{
+                pcOption = opcoes[2];
+            }
+
+            alert("Você escolheu: " + userOption + "\nO computador escolheu: " + pcOption);
+
+            if(userOption === pcOption) {
+                alert("Empate!");
+            }else if((userOption === "pedra" && pcOption === "tesoura") ||
+                    (userOption === "tesoura" && pcOption === "papel") ||
+                    (userOption === "papel" && pcOption === "pedra")) {
+                alert("Você venceu!");
+            }else{
+                alert("O computador venceu!");
+            }
+
+            var op = prompt("Se quiser jogar novamente digite 1, se não, digite 2: ");
+
+        }while(op == 1);
+    </script>
+</body>
+</html>
