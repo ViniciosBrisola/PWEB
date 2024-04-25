@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade11</title>
+</head>
+<body>
+    <script>
+        //PRIMEIRA MANEIRA
+        var funcionario1 = new Object();
+        funcionario1.matricula = "0030482213032";
+        funcionario1.nome = "Vinicios";
+        funcionario1.funcao = "Engenheiro";
+        alert(`Matrícula = ${funcionario1.matricula}\nNome = ${funcionario1.nome}\nFunção = ${funcionario1.funcao}`);
+
+        //SEGUNDA MANEIRA
+        var funcionario2 = {};
+        funcionario2.matricula = "0030482213100";
+        funcionario2.nome = "Wikaro";
+        funcionario2.funcao = "Arquiteto";
+        alert(`Matrícula = ${funcionario2.matricula}\nNome = ${funcionario2.nome}\nFunção = ${funcionario2.funcao}`);
+
+        //TERCEIRA MANEIRA
+        var funcionario3 = {
+            matricula: "0030482213200",
+            nome: "Ian",
+            funcao: "Médico"
+        };
+        alert(`Matrícula = ${funcionario3.matricula}\nNome = ${funcionario3.nome}\nFunção = ${funcionario3.funcao}`);
+    </script>
+</body>
+</html>
