@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(215, 227, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+form {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.187);
+    border-radius: 6px;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    box-sizing: border-box;
+    resize: none;
+}
+h1, h2 {
+    text-align: center;
+}
+input[type="submit"], input[type="reset"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #abadab;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: rgb(130, 130, 130);
+}

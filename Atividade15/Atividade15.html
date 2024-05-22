@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 15</title>
+        <link rel="stylesheet" href="Atividade15.css">
+    </head>
+    <body>
+        <form id="mainForm" onsubmit="return validar();">
+            <h1>Formulário Principal</h1>
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <textarea id="comentarios" name="comentarios" placeholder="Comentários"></textarea>
+    
+            <h2>Primeira vez nesta pagina?</h2>
+            <input type="radio" id="sim" name="visita" value="sim">
+            <label for="sim">Sim</label><br>
+            <input type="radio" id="nao" name="visita" value="nao">
+            <label for="nao">Não</label><br>
+    
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick="limparInputs()">
+        </form>
+    </body>
+    <script src="Atividade15.js"></script>
+</html>
