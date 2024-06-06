@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.15.3",
+    "msnodesqlv8": "^4.2.1",
+    "mssql": "^10.0.2",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "site_fatec",
+  "version": "1.0.0",
+  "description": "Site da Fatec Sorocaba",
+  "main": "callback1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
