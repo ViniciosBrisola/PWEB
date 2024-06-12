@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+            <h1 class="cabecalho-titulo">Quadro Kanban</h1>
+        </div>
+    </header>
+    <div class="kanban-container">
+        <div class="coluna coluna-pendente" id="pendente">
+            <div class="cabecalho-coluna">Pendente</div>
+            <div class="lista-tarefas wrapper-tarefa"></div>
+        </div>
+        <div class="coluna coluna-em-progresso" id="emProgresso">
+            <div class="cabecalho-coluna">Em Progresso</div>
+            <div class="lista-tarefas wrapper-tarefa"></div>
+        </div>
+        <div class="coluna coluna-concluida" id="concluida">
+            <div class="cabecalho-coluna">Concluída</div>
+            <div class="lista-tarefas wrapper-tarefa"></div>
+        </div>
+    </div>
+    <div class="adicionar-tarefa-container">
+        <button class="btn btn-adicionar-tarefa" id="botaoAdicionarTarefa">Adicionar Tarefa</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modalTarefa" class="modal">
+        <div class="modal-conteudo modal-content">
+            <span class="fechar close">&times;</span>
+            <form id="formularioTarefa">
+                <input type="hidden" id="idTarefa">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+
+                <label for="prioridade">Prioridade</label>
+                <select id="prioridade" name="prioridade" required>
+                    <option value="Alta">Alta</option>
+                    <option value="Média">Média</option>
+                    <option value="Baixa">Baixa</option>
+                </select>
+
+                <label for="dataVencimento">Data de Vencimento</label>
+                <input type="date" id="dataVencimento" name="dataVencimento" required>
+
+                <label for="responsaveis">Responsáveis</label>
+                <input type="text" id="responsaveis" name="responsaveis" required>
+
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                    <option value="pendente">Pendente</option>
+                    <option value="emProgresso">Em Progresso</option>
+                    <option value="concluida">Concluída</option>
+                </select>
+
+                <button type="submit" class="btn">Salvar</button>
+                <button type="button" class="btn" id="botaoExcluirTarefa">Excluir</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
